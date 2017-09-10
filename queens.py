@@ -45,6 +45,10 @@ def print_positions(positions):
         
         print(" ".join(row))
 
+# gotcha: it only yields a reference to a list that will itself change as soon
+# as the generator continues. If you want to store a copy of all solutions,
+# explicitly perform a copy (as it's a one-dimensional list, positions[:]
+# should suffice)
 def _n_queens(positions, n, ind):
     if ind == n:
         yield positions
