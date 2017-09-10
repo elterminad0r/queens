@@ -15,7 +15,7 @@ def cols_valid(positions, target):
     return len(set(positions)) == target
 
 # these two functions use a little bit of mathematical reasoning - if a queen
-# at (x, y) is shifted along one diagonal, it arrives can arrive at one of:
+# at (x, y) is shifted along one diagonal, it can arrive at one of:
 # (x + shift, y + shift), in which case (x - y) remains constant, or
 # (x - shift, y + shift), in which case (x + y) remains constant.
 
