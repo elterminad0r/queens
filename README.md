@@ -37,3 +37,6 @@ The default case is 8\*8 - so calling with `$ python queens.py` results in somet
 It works for any board dimension - eg `$ python -n 13`.
 
 It features a little optimisation - minimising dual computation and reconstruction of objects - `positions` in `_n_queens` is always the same list, and its length is never changed.
+
+
+# Old, bad code deprecated in favour of ~/pybin/queens.py
